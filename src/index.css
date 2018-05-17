@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.col-sm{
+	border: solid 1px rgba(24, 24, 24, 0.952);
+	border-radius: 5px;
+	padding: 10px;
+}
+.row2{
+	height: 400px;
+}
+.row{
+	padding-left: 10px;
+}
+.days{
+	background-color: rgb(29, 116, 216);
+	color: #fff;
+	text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+}
+.title{
+	text-align: center;
+}
+button, .btn{
+	background-color: rgb(29, 116, 216);
+	color: #fff;	
+	border-radius: 5px;
+	padding: 5px;
+	margin-top: 10px;
+}
+.btn{
+	margin-top: 0;
+	padding-bottom: 4px;
+}
+label{
+	margin: 8px;
+}
+input{
+	border: 1px black solid;
+	padding: 7px;
+	margin-top: 10px;
+}
+.submit{
+	margin-left: 20px;
+	background-color: rgb(185, 5, 29);
+	padding: 7px;
+}
+.singleEvent, .updateEventForm{
+	border: 1px black solid;
+	justify-content: center;
+	width: 50%;
+	margin: auto;
+	padding: 15px;
+}
+.singleEvent h1{
+	text-transform: capitalize;
+}
+label{
+	font-weight: bold;
+	font-size: 18px;
+	margin-bottom: 0;
+	margin-top: 20px;
+}
+
+.title{
+	text-transform: uppercase;
+	font-family: 'Times New Roman', Times, serif
+}
+.users-div{
+    position: relative;
+	text-align: center;
+	font-family: 'Times New Roman', Times, serif
+}
+.user-links{
+	text-decoration: none;
+	color: #672457;
+	font-size: 20px;
+	font-family: 'Times New Roman', Times, serif
+}
+.user-links:hover{
+	color: #B6DDC9;
+	font-size: 20px;
+}
+.title2{
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 20px;
+}
+.eachEvent a{
+	color: #000;
+	justify-content: left;
+}
+.BackToUsers{
+	color: #000;
+	margin: auto;
+	font-weight: bold;
+}
+.calContainer{
+	text-align: center;
+}
+.calenda2{
+	margin-top: 20px;
+}
