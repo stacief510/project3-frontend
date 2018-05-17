@@ -33,7 +33,7 @@ class Home extends Component {
     }
 
     componentDidMount = () => {
-        axios.get('http://localhost:3001/users')
+        axios.get('https://scheduler-backend.herokuapp.com/users')
             .then((res) => {
                 this.setState({
                     users: res.data

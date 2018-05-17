@@ -70,7 +70,7 @@ class CalendarContainer extends Component{
     }
 
     componentDidMount(){
-        axios.get(`http://localhost:3001/users/${this.props.match.params.id}/events`)
+        axios.get(`https://scheduler-backend.herokuapp.com/users/${this.props.match.params.id}/events`)
             .then((res)=>{
                 console.log(res.data)
                 this.setState({
@@ -93,7 +93,7 @@ class CalendarContainer extends Component{
         let userId = this.state.user_id;
         console.log(123, this.state)
         console.log('this is it', userId);
-        axios.post(`http://localhost:3001/users/${userId}/events`, {title, day, time, user_id})
+        axios.post(`https://scheduler-backend.herokuapp.com/users/${userId}/events`, {title, day, time, user_id})
             .then(res => {
                 let createdEvent = res.data;
                 this.setState({

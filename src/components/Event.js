@@ -12,7 +12,7 @@ class Event extends Component {
    
         componentDidMount = () => {
             let oneEvent = this.props.match.params.id;
-            axios.get(`http://localhost:3001/events/${oneEvent}`)
+            axios.get(`https://scheduler-backend.herokuapp.com/events/${oneEvent}`)
             .then((res)=>{
                 this.setState({
                     day: res.data.day,
@@ -27,7 +27,7 @@ class Event extends Component {
         onDelete = () => {
             let oneEvent = this.props.match.params.id;
             let userId= this.props.match.params.user_id;
-            axios.delete(`http://localhost:3001/users/${userId}/events/${oneEvent}`, {data: {id: oneEvent}})
+            axios.delete(`https://scheduler-backend.herokuapp.com/users/${userId}/events/${oneEvent}`, {data: {id: oneEvent}})
                 .then(res => {
                     this.props.history.push(`/users/${userId}/events`);
                 })
@@ -45,7 +45,7 @@ class Event extends Component {
             const {title, day, time} = this.state;
             let oneEvent = this.props.match.params.id;
             let userId= this.props.match.params.user_id;
-            axios.put(`http://localhost:3001/users/${userId}/events/${oneEvent}`, {title, day, time})
+            axios.put(`https://scheduler-backend.herokuapp.com/users/${userId}/events/${oneEvent}`, {title, day, time})
                 .then(res => {
                     let updatedEvent = res.data;
                     this.setState({
